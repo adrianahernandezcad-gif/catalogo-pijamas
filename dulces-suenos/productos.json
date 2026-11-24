@@ -322,20 +322,6 @@
       "imagenes": [
         "img/satin-champagne.png"
       ]
-    },
-    {
-      "id": 21,
-      "nombre": "Pijama Satín Corazones & Encaje Blanco",
-      "precio": 65000,
-      "categoria": "satin",
-      "estado": "Disponible",
-      "talla": "Talla Única",
-      "etiqueta": "Satín Premium",
-      "subtitulo": "2 piezas (camisa encaje + pantalón)",
-      "detalle": "Satín rosado con corazoncitos negros y encaje blanco delicado.",
-      "imagenes": [
-        "img/satin-encaje.png"
-      ]
     }
   ]
 }
