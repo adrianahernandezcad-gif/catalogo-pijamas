@@ -1,3 +1,78 @@
 media:
   input: dulces-suenos/img
   output: img
+
+content:
+  - name: catalogo
+    label: Catálogo de Pijamas
+    type: file
+    path: dulces-suenos/productos.json
+    fields:
+      - name: items
+        label: Pijamas
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: Código / ID
+            type: number
+          - name: nombre
+            label: Nombre de la Pijama
+            type: string
+            required: true
+          - name: precio
+            label: Precio (sin puntos ni signo $)
+            type: number
+            required: true
+          - name: categoria
+            label: Categoría (Filtro)
+            type: select
+            options:
+              values:
+                - value: traslucidas
+                  label: Traslúcidas ($30k)
+                - value: pantaloneta
+                  label: Piel Durazno Pantaloneta ($32k)
+                - value: algodon3
+                  label: Algodón 3 Piezas ($38k)
+                - value: camisera
+                  label: Camisera Short ($39k)
+                - value: batas
+                  label: Batas Satín ($40k)
+                - value: durazno-short
+                  label: Durazno Botones ($43k)
+                - value: encaje
+                  label: Durazno + Encaje ($45k)
+                - value: durazno-s
+                  label: Durazno Talla S ($48k)
+                - value: navidad
+                  label: Navidad ($50k)
+                - value: polialgodon
+                  label: Polialgodón ($60k)
+                - value: satin
+                  label: Satín Premium ($65k)
+          - name: estado
+            label: Disponibilidad
+            type: select
+            options:
+              values:
+                - Disponible
+                - Consultar disponibilidad
+                - Agotado
+          - name: talla
+            label: Talla
+            type: string
+            default: Talla Única
+          - name: etiqueta
+            label: Etiqueta dorada (Ej. Piel de durazno)
+            type: string
+          - name: subtitulo
+            label: Subtítulo (Ej. 2 piezas blusa y short)
+            type: string
+          - name: detalle
+            label: Descripción detallada
+            type: text
+          - name: imagenes
+            label: Fotos de la Pijama
+            type: image
+            list: true
