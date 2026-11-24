@@ -450,145 +450,13 @@
     </div>
   </div>
 
-  <script>
+ <script>
     const WHATSAPP_NUMERO = "573202949705";
-
-    const productos = [
-      {
-        id: 101,
-        nombre: "Pijama Camisera Rosada Pastel",
-        categoria: "camisera",
-        estado: "Consultar disponibilidad",
-        talla: "Talla Única",
-        etiqueta: "Camisera con short",
-        subtitulo: "2 piezas (camisa de botones y short)",
-        detalle: "Conjunto rosado pastel con estampado de animales en negro, camisa de manga corta con cuello y botones, y short a juego.",
-        precio: 39000,
-        imagenes: ["img/camisera-rosada-modelo.png", "img/camisera-rosada-catalogo.png"]
-      },
-      {
-        id: 102,
-        nombre: "Pijama Stitch Azul Noche",
-        categoria: "encaje",
-        estado: "Disponible",
-        talla: "Talla Única",
-        etiqueta: "Piel de durazno + Encaje",
-        subtitulo: "2 piezas (blusa de tiras con encaje negro + pantalón largo)",
-        detalle: "Hermoso conjunto en tela piel de durazno ultra suave sobre fondo azul noche con estampado tierno de Stitch y corazones, realzado con encaje negro delicado en el escote.",
-        precio: 45000,
-        imagenes: ["img/stitch-azul-noche.png"]
-      },
-      {
-        id: 103,
-        nombre: "Pijama Estampado Rosa Dulce",
-        categoria: "encaje",
-        estado: "Disponible",
-        talla: "Talla Única",
-        etiqueta: "Piel de durazno + Encaje",
-        subtitulo: "2 piezas (blusa de tiras con encaje + pantalón largo)",
-        detalle: "Conjunto rosado con estampado de vaquitas, blusa de tiras con encaje negro y pantalón largo a juego. Suavidad y comodidad para tus noches de descanso.",
-        precio: 45000,
-        imagenes: ["img/rosa-dulce.jpg"]
-      },
-      {
-        id: 104,
-        nombre: "Pijama Stitch Tropical con Pantaloneta",
-        categoria: "pantaloneta",
-        estado: "Consultar disponibilidad",
-        talla: "Talla Única",
-        etiqueta: "Piel de durazno + Pantaloneta",
-        subtitulo: "2 piezas: blusa de tiras y pantaloneta",
-        detalle: "Blusa de tiras y pantaloneta azules con estampado de Stitch y flores blancas. Conjunto en piel de durazno. Consulta talla y disponibilidad por WhatsApp.",
-        precio: 32000,
-        imagenes: ["img/stitch-tropical.png"]
-      },
-      {
-        id: 105,
-        nombre: "Pijama Garfield Celeste con Pantaloneta",
-        categoria: "pantaloneta",
-        estado: "Consultar disponibilidad",
-        talla: "Talla Única",
-        etiqueta: "Piel de durazno + Pantaloneta",
-        subtitulo: "2 piezas: blusa de tiras y pantaloneta",
-        detalle: "Blusa blanca de tiras con Garfield y pantaloneta celeste estampada. Conjunto en piel de durazno. Consulta talla y disponibilidad por WhatsApp.",
-        precio: 32000,
-        imagenes: ["img/garfield-celeste.png"]
-      },
-      {
-        id: 106,
-        nombre: "Pijama Ositos Cariñositos Azul con Pantaloneta",
-        categoria: "pantaloneta",
-        estado: "Consultar disponibilidad",
-        talla: "Talla Única",
-        etiqueta: "Piel de durazno + Pantaloneta",
-        subtitulo: "2 piezas: blusa de tiras y pantaloneta",
-        detalle: "Blusa de tiras y pantaloneta azules con estampado de Osito. Conjunto en piel de durazno. Consulta talla y disponibilidad por WhatsApp.",
-        precio: 32000,
-        imagenes: ["img/ositos-azul.png"]
-      },
-      {
-        id: 107,
-        nombre: "Pijama Marie Rosada con Pantaloneta",
-        categoria: "pantaloneta",
-        estado: "Consultar disponibilidad",
-        talla: "Talla Única",
-        etiqueta: "Piel de durazno + Pantaloneta",
-        subtitulo: "2 piezas: blusa de tiras y pantaloneta",
-        detalle: "Blusa blanca de tiras con Marie y pantaloneta rosada estampada. Conjunto en piel de durazno. Consulta talla y disponibilidad por WhatsApp.",
-        precio: 32000,
-        imagenes: ["img/marie-rosada.png"]
-      },
-      {
-        id: 108,
-        nombre: "Pijama Traslúcida Verde con Short de Boleros",
-        categoria: "traslucidas",
-        estado: "Consultar disponibilidad",
-        talla: "Talla Única",
-        etiqueta: "Traslúcida + Boleros",
-        subtitulo: "Blusa de tiras y short con boleros",
-        detalle: "Pijama verde con lunares blancos, blusa de tiras y short con boleros a juego. Consulta talla y disponibilidad por WhatsApp.",
-        precio: 30000,
-        imagenes: ["img/traslucida-verde.png"]
-      },
-      {
-        id: 109,
-        nombre: "Pijama Traslúcida Blanca con Pantaloneta",
-        categoria: "traslucidas",
-        estado: "Consultar disponibilidad",
-        talla: "Talla Única",
-        etiqueta: "Traslúcida + Pantaloneta",
-        subtitulo: "Blusa de tiras y pantaloneta",
-        detalle: "Pijama blanca con pequeños motivos azules, blusa de tiras y pantaloneta a juego. Consulta talla y disponibilidad por WhatsApp.",
-        precio: 30000,
-        imagenes: ["img/traslucida-blanca.png"]
-      },
-      { id: 1, nombre: "Pijama Daisy Rosa Pastel (3 Piezas)", categoria: "algodon3", estado: "Disponible", talla: "Talla Única", etiqueta: "Algodón Importado", subtitulo: "3 piezas (camiseta + short + pantalón)", detalle: "Camiseta manga corta + pantaloneta + pantalón largo en algodón importado suave.", precio: 38000, imagenes: ["img/daisy.png"] },
-      { id: 2, nombre: "Pijama Cinnamoroll Azul Cielo (3 Piezas)", categoria: "algodon3", estado: "Disponible", talla: "Talla Única", etiqueta: "Algodón Importado", subtitulo: "3 piezas (camiseta + short + pantalón)", detalle: "Camiseta blanca/celeste + pantaloneta + pantalón largo estampado.", precio: 38000, imagenes: ["img/cinnamoroll.png"] },
-      { id: 3, nombre: "Pijama Hello Kitty Cumpleaños (3 Piezas)", categoria: "algodon3", estado: "Disponible", talla: "Talla Única", etiqueta: "Algodón Importado", subtitulo: "3 piezas (camiseta + short + pantalón)", detalle: "Camiseta rosa + pantaloneta + pantalón largo estampado.", precio: 38000, imagenes: ["img/hellokitty.png"] },
-      { id: 4, nombre: "Bata en Satín Rosa Pastel", categoria: "batas", estado: "Disponible", talla: "Talla Única", etiqueta: "Satín Brillante", subtitulo: "Bata elegante con cinturón ajustable", detalle: "Bata elegante manga 3/4 con lazo a juego.", precio: 40000, imagenes: ["img/bata-rosa.png"] },
-      { id: 5, nombre: "Bata en Satín Azul Zafiro", categoria: "batas", estado: "Disponible", talla: "Talla Única", etiqueta: "Satín Brillante", subtitulo: "Bata elegante con cinturón ajustable", detalle: "Bata satinada tono azul profundo con cinturón.", precio: 40000, imagenes: ["img/bata-azul.png"] },
-      { id: 6, nombre: "Bata en Satín Negro Clásico", categoria: "batas", estado: "Disponible", talla: "Talla Única", etiqueta: "Satín Brillante", subtitulo: "Bata elegante con cinturón ajustable", detalle: "Bata negra satinada sofisticada con lazo.", precio: 40000, imagenes: ["img/bata-negra.png"] },
-      { id: 7, nombre: "Pijama Labubu Rosa Pastel (2 Piezas)", categoria: "durazno-short", estado: "Disponible", talla: "Talla Única", etiqueta: "Piel de durazno", subtitulo: "2 piezas (blusa botones + short)", detalle: "Blusa manga corta con botones y pantaloneta estampada.", precio: 43000, imagenes: ["img/labubu.png"] },
-      { id: 8, nombre: "Pijama Lotso Morado & Rosa (2 Piezas)", categoria: "durazno-short", estado: "Disponible", talla: "Talla Única", etiqueta: "Piel de durazno", subtitulo: "2 piezas (blusa botones + short)", detalle: "Blusa camisera con ribete rosa y pantaloneta a juego.", precio: 43000, imagenes: ["img/lotso.png"] },
-      { id: 9, nombre: "Pijama Baby Yoda (2 Piezas)", categoria: "durazno-s", estado: "Disponible", talla: "Talla S", etiqueta: "Piel de durazno", subtitulo: "2 piezas (camiseta + pantalón largo)", detalle: "Camiseta estampada + pantalón largo negro en piel de durazno.", precio: 48000, imagenes: ["img/baby-yoda.png"] },
-      { id: 10, nombre: "Pijama Vilma Picapiedra (2 Piezas)", categoria: "durazno-s", estado: "Disponible", talla: "Talla S", etiqueta: "Piel de durazno", subtitulo: "2 piezas (camiseta + pantalón largo)", detalle: "Camiseta blanca + pantalón largo estampado naranja.", precio: 48000, imagenes: ["img/vilma.png"] },
-      { id: 11, nombre: "Pijama Navideña Santa & Cuadros (2 Piezas)", categoria: "navidad", estado: "Disponible", talla: "Talla Única", etiqueta: "Edición Navidad", subtitulo: "2 piezas (camiseta + pantalón cuadros)", detalle: "Camiseta navideña + pantalón largo a cuadros rojos y negros.", precio: 50000, imagenes: ["img/navidad-santa.png"] },
-      { id: 12, nombre: "Saco Navideño Team Grinch Rojo", categoria: "navidad", estado: "Disponible", talla: "Talla Única", etiqueta: "Edición Navidad", subtitulo: "Saco navideño algodón tejido", detalle: "Saco rojo intenso con diseño frontal Team Grinch.", precio: 50000, imagenes: ["img/saco-grinch-rojo.jpg"] },
-      { id: 13, nombre: "Saco Navideño Grinch Negro & Copos", categoria: "navidad", estado: "Disponible", talla: "Talla Única", etiqueta: "Edición Navidad", subtitulo: "Saco navideño algodón tejido", detalle: "Saco negro con diseño del Grinch y copos de nieve.", precio: 50000, imagenes: ["img/saco-grinch-negro.jpg"] },
-      { id: 14, nombre: "Saco Navideño Renos Rojo & Marfil", categoria: "navidad", estado: "Disponible", talla: "Talla Única", etiqueta: "Edición Navidad", subtitulo: "Saco navideño algodón tejido", detalle: "Saco navideño tejido con renos y copos blancos.", precio: 50000, imagenes: ["img/saco-renos-rojo.png"] },
-      { id: 15, nombre: "Saco Navideño Renos & Pinos Marfil", categoria: "navidad", estado: "Disponible", talla: "Talla Única", etiqueta: "Edición Navidad", subtitulo: "Saco navideño algodón tejido", detalle: "Saco tono crema con renos rojos y pinos navideños.", precio: 50000, imagenes: ["img/saco-renos-marfil.png"] },
-      { id: 16, nombre: "Pijama Polialgodón Estrellitas & Perritos", categoria: "polialgodon", estado: "Disponible", talla: "Talla Única", etiqueta: "Polialgodón Suave", subtitulo: "2 piezas (camisa botones + pantalón)", detalle: "Camisa de botones con ribete rosa + pantalón largo.", precio: 60000, imagenes: ["img/poli-estrellas.png"] },
-      { id: 17, nombre: "Pijama Polialgodón Lazos Vainilla & Café", categoria: "polialgodon", estado: "Disponible", talla: "Talla Única", etiqueta: "Polialgodón Suave", subtitulo: "2 piezas (camisa botones + pantalón)", detalle: "Tono crema con moñitos café y ribete oscuro + pantalón largo.", precio: 60000, imagenes: ["img/poli-lazos.png"] },
-      { id: 18, nombre: "Pijama Polialgodón Corazones Rojos", categoria: "polialgodon", estado: "Disponible", talla: "Talla Única", etiqueta: "Polialgodón Suave", subtitulo: "2 piezas (camisa botones + pantalón)", detalle: "Fondo blanco con corazones y ribete rojo + pantalón largo.", precio: 60000, imagenes: ["img/poli-corazones.png"] },
-      { id: 19, nombre: "Pijama Satín Fresitas Marfil (2 Piezas)", categoria: "satin", estado: "Disponible", talla: "Talla Única", etiqueta: "Satín Premium", subtitulo: "2 piezas (camisa botones + pantalón)", detalle: "Camisa de botones con estampado de fresas + pantalón largo.", precio: 65000, imagenes: ["img/satin-fresitas.png"] },
-      { id: 20, nombre: "Pijama Satín Champagne Corazones (2 Piezas)", categoria: "satin", estado: "Disponible", talla: "Talla Única", etiqueta: "Satín Premium", subtitulo: "2 piezas (camisa botones + pantalón)", detalle: "Tono champagne con corazones sutiles y ribete dorado.", precio: 65000, imagenes: ["img/satin-champagne.png"] },
-      { id: 21, nombre: "Pijama Satín Corazones & Encaje Blanco", categoria: "satin", estado: "Disponible", talla: "Talla Única", etiqueta: "Satín Premium", subtitulo: "2 piezas (camisa encaje + pantalón)", detalle: "Satín rosado con corazoncitos negros y encaje blanco delicado.", precio: 65000, imagenes: ["img/satin-encaje.png"] }
-    ];
-
+    let productos = [];
     let carrito = [];
 
     function formatoPesos(valor) {
-      return "$" + valor.toLocaleString("es-CO");
+      return "$" + Number(valor).toLocaleString("es-CO");
     }
 
     function cambiarFoto(prodId, nuevaRuta, btnMiniatura) {
@@ -607,17 +475,19 @@
 
       const lista = filtro === 'todas' ? productos : productos.filter(p => p.categoria === filtro);
 
-      lista.forEach(prod => {
+      lista.forEach((prod, index) => {
+        const prodId = prod.id || (index + 1);
         const precioTexto = formatoPesos(prod.precio);
         const mensaje = encodeURIComponent(`¡Hola Dulces Sueños! 🌙✨ Me interesa pedir: *${prod.nombre}* (${precioTexto}). Pago por Nequi.`);
         const linkWhatsapp = `https://wa.me/${WHATSAPP_NUMERO}?text=${mensaje}`;
+        const fotos = (prod.imagenes && prod.imagenes.length > 0) ? prod.imagenes : ["img/daisy.png"];
 
         let miniaturasHTML = '';
-        if (prod.imagenes && prod.imagenes.length > 0) {
-          const thumbs = prod.imagenes.map((imgUrl, idx) => `
+        if (fotos.length > 0) {
+          const thumbs = fotos.map((imgUrl, idx) => `
             <button
               type="button"
-              onclick="cambiarFoto(${prod.id}, '${imgUrl}', this)"
+              onclick="cambiarFoto(${prodId}, '${imgUrl}', this)"
               class="w-11 h-11 rounded-lg overflow-hidden border border-[#dfd0c5] ${idx === 0 ? 'ring-2 ring-[#c69c3a]' : ''} bg-white shrink-0 transition"
             >
               <img src="${imgUrl}" alt="Vista ${idx + 1}" class="w-full h-full object-cover" />
@@ -627,7 +497,7 @@
           miniaturasHTML = `
             <div class="flex items-center justify-center gap-2 py-2.5 border-b border-[#efe3d6] bg-[#fffcf9]">
               ${thumbs}
-              <span class="text-[11px] text-[#8a6d7b] ml-1">${prod.imagenes.length > 1 ? 'Ver fotos' : 'Foto real'}</span>
+              <span class="text-[11px] text-[#8a6d7b] ml-1">${fotos.length > 1 ? 'Ver fotos' : 'Foto real'}</span>
             </div>
           `;
         }
@@ -637,16 +507,16 @@
         card.innerHTML = `
           <div class="relative bg-[#fdf3f6] aspect-[4/5] overflow-hidden group">
             <img
-              id="img-main-${prod.id}"
-              src="${prod.imagenes[0]}"
+              id="img-main-${prodId}"
+              src="${fotos[0]}"
               alt="${prod.nombre}"
               class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
             />
             <span class="absolute top-3 left-3 bg-[#fffaf2]/95 text-[#7a5c2e] text-[11px] font-semibold px-3 py-1 rounded-full shadow-xs border border-[#e3d2b8]">
-              ${prod.estado}
+              ${prod.estado || 'Disponible'}
             </span>
             <span class="absolute top-3 right-3 bg-white/95 text-[#2d1b2e] text-[11px] font-bold px-3 py-1 rounded-full shadow-xs border border-[#e3d2b8]">
-              ${prod.talla}
+              ${prod.talla || 'Talla Única'}
             </span>
           </div>
 
@@ -655,20 +525,20 @@
           <div class="p-5 flex flex-col flex-grow justify-between">
             <div>
               <div class="flex items-baseline justify-between gap-2 mb-1">
-                <span class="text-[11px] font-semibold text-[#9e7b47]">✨ ${prod.etiqueta}</span>
+                <span class="text-[11px] font-semibold text-[#9e7b47]">✨ ${prod.etiqueta || ''}</span>
                 <span class="font-serif-brand text-lg font-bold text-[#2d1b2e]">${precioTexto}</span>
               </div>
 
               <h3 class="font-serif-brand text-lg font-bold text-[#2d1b2e] leading-snug">
                 ${prod.nombre}
               </h3>
-              <p class="text-[11px] font-medium text-[#7a606d] mb-2">${prod.subtitulo}</p>
-              <p class="text-xs text-[#6e5260] leading-relaxed mb-5">${prod.detalle}</p>
+              <p class="text-[11px] font-medium text-[#7a606d] mb-2">${prod.subtitulo || ''}</p>
+              <p class="text-xs text-[#6e5260] leading-relaxed mb-5">${prod.detalle || ''}</p>
             </div>
 
             <div class="space-y-2 pt-2">
               <button
-                onclick="agregarAlCarrito(${prod.id})"
+                onclick="agregarAlCarrito(${index})"
                 class="w-full gold-btn text-white text-xs sm:text-sm font-bold py-2.5 rounded-full shadow-xs transition flex items-center justify-center gap-2"
               >
                 <span>🛍️ Agregar al carrito • ${precioTexto}</span>
@@ -698,8 +568,8 @@
       renderizar(categoria);
     }
 
-    function agregarAlCarrito(id) {
-      const item = productos.find(p => p.id === id);
+    function agregarAlCarrito(index) {
+      const item = productos[index];
       if (item) {
         carrito.push(item);
         actualizarCarrito();
@@ -725,7 +595,7 @@
       let suma = 0;
       contenedor.innerHTML = '';
       carrito.forEach((prod, i) => {
-        suma += prod.precio;
+        suma += Number(prod.precio);
         contenedor.innerHTML += `
           <div class="flex items-center justify-between bg-white border border-[#e3d2b8] rounded-2xl p-3">
             <div class="pr-2">
@@ -750,13 +620,28 @@
       let total = 0;
       carrito.forEach((p, idx) => {
         texto += `${idx + 1}. ${p.nombre} - ${formatoPesos(p.precio)}\n`;
-        total += p.precio;
+        total += Number(p.precio);
       });
       texto += `\n*Total:* ${formatoPesos(total)} COP`;
       window.open(`https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(texto)}`, "_blank");
     }
 
-    renderizar();
+    async function cargarCatalogo() {
+      try {
+        const res = await fetch('productos.json?v=' + Date.now());
+        const data = await res.json();
+        productos = data.items || [];
+        const btnTodas = document.querySelector('#filter-buttons button');
+        if (btnTodas) {
+          btnTodas.textContent = `Todas (${productos.length})`;
+        }
+        renderizar();
+      } catch (e) {
+        console.error("Error cargando el catálogo:", e);
+      }
+    }
+
+    cargarCatalogo();
     actualizarCarrito();
   </script>
 </body>
